@@ -1,0 +1,18 @@
+<table class="table table-striped">
+  <thead>
+  <th>productId</th>
+  <th>name</th>
+  <th>unitPrice</th>
+  <th>description</th>
+  <th>maximumQuantity</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of products">
+      <td>{{product.productId}}</td>
+      <td>{{product.name}}</td>
+      <td>{{product.unitPrice }}</td>
+      <td>{{product.description}}</td>
+      <td>{{product.maximumQuantity}}</td>
+    </tr>
+  </tbody>
+</table>
