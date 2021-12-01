@@ -3,5 +3,6 @@ export class Product {
   public name: string;
   public description: string;
   public unitPrice: number;
+  public sellingPrice: number;
   public maximumQuantity: number;
 }

@@ -1,16 +1,16 @@
 <table class="table table-striped">
   <thead>
-  <th>productId</th>
-  <th>name</th>
-  <th>unitPrice</th>
-  <th>description</th>
-  <th>maximumQuantity</th>
+  <th>ProductId</th>
+  <th>Name</th>
+  <th>Unit Price</th>
+  <th>Description</th>
+  <th>Maximum Quantity</th>
   </thead>
   <tbody>
     <tr *ngFor="let product of products">
       <td>{{product.productId}}</td>
       <td>{{product.name}}</td>
-      <td>{{product.unitPrice }}</td>
+      <td>{{product.sellingPrice }}</td>
       <td>{{product.description}}</td>
       <td>{{product.maximumQuantity}}</td>
     </tr>
