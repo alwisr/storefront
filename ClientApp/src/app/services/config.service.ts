@@ -17,7 +17,7 @@ private config: Configuration;
     return new Promise((resolve) => {
       this.httpClient.get<Configuration>(url).subscribe(config => {
         this.config = config;
-        debugger;
+       // debugger;
         resolve();
       });
     });
