@@ -10,9 +10,9 @@
     <tr *ngFor="let product of products">
  
       <td>{{product.name}}</td>
-      <td>{{product.sellingPrice }}</td>
+      <td>{{product.sellingPrice | number:'1.2-2' }}</td>
       <td>{{product.description}}</td>
-      <td>{{product.maximumQuantity}}</td>
+      <td>{{product.maximumQuantity | number}}</td>
     </tr>
   </tbody>
 </table>

@@ -33,8 +33,8 @@ namespace storefront
 
             });
             services.AddAuthentication(IISDefaults.AuthenticationScheme);
-            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_3_0);
-            services.AddHttpClient<IProductService, ProductService>();
+            services.AddMvc();
+            services.AddHttpClient<IProductService, FinnhubProductService>();
             //  services.AddHttpClient<ICurrencyService, CurrencyService>();
             //  services.AddHttpClient<IOrderService, OrderService>();
             services.Configure<AppSettings>(Configuration.GetSection("AppSettings"));

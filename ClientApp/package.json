@@ -3,10 +3,10 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "build:ssr": "ng run storefront:server:dev",
-    "test": "ng test",
+    "start": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng serve",
+    "build": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng build",
+    "build:ssr": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng run storefront:server:dev",
+    "test": "cross-env NODE_OPTIONS=--openssl-legacy-provider ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -43,6 +43,7 @@
     "@types/jasminewd2": "~2.0.8",
     "@types/node": "~12.11.6",
     "codelyzer": "^5.2.2",
+    "cross-env": "^7.0.3",
     "ini": "^1.3.7",
     "jasmine-core": "~3.5.0",
     "jasmine-spec-reporter": "~4.2.1",
